@@ -30,6 +30,12 @@ body {
   min-height: 100vh;
 
 }
+body{
+  background-color: #323437;
+  font-family: "Roboto Mono", "Roboto Mono", "Vazirmatn", monospace;
+  color: aliceblue;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
 
 h1 {
   font-size: 3.2em;
@@ -67,40 +73,23 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-.card{
-  border: 1px solid white;
-  border-radius: 10px;
-  max-width: 250px;
-  box-shadow: 12px black;
-  display: inline-block;
-  padding: 20px;
-  margin: 30px;
-}
-.card img{
-  max-width: 80%;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-.badges img{
+.logo-top img{
   max-width: 10%;
-  height: auto;
-  padding:5px;
 }
-.card {
-  transition: max-width 0.5s;
+.logo-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.card:hover {
-  max-width: 270px;
-  
+.hidden-textbox{
+  background-color: transparent ;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 4vh;
+  resize: none;
+  caret-color: #e2b714;
 }
-.hidden {
-  display: none;
-  color: gray;
+.hidden-textbox:focus{
+  outline: none;
 }
-.card:hover .hidden{
-  display: block;
-  transition: display 0.7s;
-}
-
