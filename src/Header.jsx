@@ -2,7 +2,7 @@ function Header(){
     return(
         <header>
             <h1>Pokemon Starters</h1>
-            <h2>But it's cats.</h2>
+            <h3>But it's cats.</h3>
         </header>
     );
 
